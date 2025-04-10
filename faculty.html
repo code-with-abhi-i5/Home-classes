@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expert Educators</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        background-color: #fff;
+        color: #333;
+      }
+      h2 {
+        padding-left: 16%;
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 40px;
+        color: #5c4b7d;
+      }
+      .educator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+      }
+      .educator:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .educator img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+       
+        margin: 0 30px;
+        /* flex-shrink: 0; */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        
+      }
+      .educator-text {
+        max-width: 600px;
+      }
+      .educator h3 {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0;
+        text-align: left;
+      }
+      .educator h3 a {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 2px solid #000;
+      }
+      .educator p {
+        line-height: 1.6;
+      }
+      @media (max-width:1000px){
+        h2 {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 40px;
+        color: #5c4b7d;
+        padding: 0;
+      }
+
+      }
+      @media screen and (max-width: 768px) {
+        .educator {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .educator:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+        .educator img {
+          margin: 10px 20px;
+        }
+        .educator-text {
+          text-align: left;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Guided by the Best: Our Expert Educators</h2>
+      <div class="educator">
+        <img src="./images/soumitra.jpg" />
+        <div class="educator-text">
+          <h3>Founder- Mr. Soumitra Ghosh</h3>
+          <p>
+            With over 7 years of teaching experience, Mr. Soumitra Ghosh is a
+            dedicated educator specializing in primary and upper primary
+            education. He holds a B.Sc. in Mathematics, along with D.El.Ed and
+            CTET certifications. His passion for foundational learning and
+            student-centric teaching methods make him a valuable mentor for
+            young learners.
+          </p>
+        </div>
+      </div>
+
+      <div class="educator">
+        <img src="./images/tara.jpg" />
+        <div class="educator-text">
+          <h3>Co-Founder- Mr. Tara Joyoti Bhakat</h3>
+          <p>
+            brings over 10 years of experience in teaching Physics at higher
+            secondary and undergraduate levels. She holds a B.Sc. and M.Sc. in
+            Physics, along with a B.Ed. Her deep knowledge and innovative
+            teaching approach make complex concepts easier to grasp for students
+            of Classes 11–12 and graduation level.
+          </p>
+        </div>
+      </div>
+
+      <div class="educator">
+        <img src="./images/basudev.jpg" />
+        <div class="educator-text">
+          <h3>Mr. Basudev Manjhi</h3>
+          <p>
+            An experienced Mathematics educator with over 10 years of teaching
+            expertise, Mr. Basudev Manjhi holds a B.Tech degree. Known for his
+            analytical approach and clarity in concept delivery, he plays a key
+            role in developing strong mathematical foundations in students.
+          </p>
+        </div>
+      </div>
+
+      <div class="educator">
+        <img src="./images/mousoumi.jpg" />
+        <div class="educator-text">
+          <h3>Ms. Mousami Maity</h3>
+          <p>
+            Has been teaching Biology for over 5 years. With an M.Sc. in Biology
+            and a B.Ed. degree, she brings both academic excellence and
+            effective teaching strategies to the classroom, inspiring students
+            to explore the wonders of life sciences.
+          </p>
+        </div>
+      </div>
+
+      <div class="educator">
+        <img src="about-us-home-tuition.png" />
+        <div class="educator-text">
+          <h3>Ms. Lilima Sathpathy</h3>
+          <p>
+            Is a dedicated educator with 5+ years of experience in teaching
+            Hindi and Sanskrit. She specializes in Primary, Upper Primary, and
+            Higher Secondary education. With a B.Sc. degree and D.El.Ed
+            qualification, she blends traditional values with modern teaching
+            methods to make language learning engaging and meaningful.
+          </p>
+        </div>
+      </div>
+
+      <div class="educator">
+        <img src="./images/rimpa.jpg" />
+        <div class="educator-text">
+          <h3>Ms. Rimpa Das holds</h3>
+          <p>
+            A B.Sc. and M.Sc. in Biology along with a B.Ed. qualification. She
+            is committed to nurturing curiosity and scientific thinking among
+            students, especially in the field of life sciences.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

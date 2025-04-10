@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's connect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(90deg,#ff0f7b,#8f25f3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      background: #e69a9a;
+      max-width: 800px;
+      width: 100%;
+      margin-right: 10px;
+    }
+
+    .contact-info {
+      background: #00b894;
+      color: #fff;
+      padding: 30px;
+      width: 40%;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-info p, .contact-info a {
+      color: #fff;
+      margin: 10px 0;
+      text-decoration: none;
+      display: block;
+    }
+
+    .contact-form {
+      padding: 30px;
+      width: 60%;
+      text-align: center;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      background: #00b894;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .contact-form button:hover {
+      background: #a78ed5;
+    }
+
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+    }
+
+    .social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #040000;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="contact-info">
+      <h2>Let's get in touch</h2>
+      <p><strong>We’re open for any suggestion or just to have a chat.</strong></p> <br>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> jamsadpur</p> <br>
+      <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +916299390773</p> <br>
+      <p><i class="fa fa-envelope"></i> <strong>Email:</strong>
+        ghoshabhijit1295@gmail.com</p> <br>
+      <p><i class="fas fa-globe"></i> <strong>Our socail:</strong>
+        <i class="social-icons">
+        <a href=""><i class="fab fa-whatsapp"></i>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a></p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Get in touch</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

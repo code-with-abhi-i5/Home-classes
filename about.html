@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Home Tuition</title>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #caf7b2a5;
+      color: #333;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #baacc7;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 50px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+      max-width: 550px;
+      padding: 20px 30px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      border-left: 5px solid #4b7bec;
+      padding-left: 15px;
+    }
+
+    .about-text h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #1609a2;
+    }
+
+    .about-text h4 {
+      font-size: 20px;
+      margin-top: 20px;
+      color: #1d3557;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .about-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .about-image img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .about-text p, .about-text h3, .about-text h4 {
+        text-align: center;
+      }
+
+      .about-image {
+        padding-top: 20px;
+      }
+    }
+  </style>
+
+
+
+</head>
+<body>
+  <section class="about-section">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <h3>Welcome to JSR Home Tuition</h3>
+      <p>
+        At JSR Home Tuition, we believe that every student has unique potential—and the right guidance can unlock it. We are a team of passionate and experienced educators committed to providing high-quality, personalized learning support at your doorstep.<br>
+      </p>
+      <h4>Founded by Mr. Soumitra Ghosh</h4>
+      <p>
+        A dedicated educator with over 7 years of experience in primary and upper primary education, JSR Home Tuition stands on the principles of student-centric learning and strong foundational understanding. With certified and qualified teachers across various subjects, we cater to students from primary level up to graduation.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="./images/hometution.jpg" alt="Home Tuition Image">
+    </div>
+  </section>
+</body>
+</html>
