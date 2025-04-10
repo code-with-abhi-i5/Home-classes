@@ -12,7 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header */
 header {
   display: flex;
   align-items: center;
@@ -30,7 +29,6 @@ h1 {
   font-size: 2.2rem;
 }
 
-/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -38,9 +36,8 @@ nav {
   padding: 1rem 2rem;
 }
 
-/* Hamburger & Cross Button Styling */
 .hamburger {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -54,7 +51,6 @@ nav {
   cursor: pointer;
 }
 
-/* Show Hamburger on Smaller Screens */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -93,7 +89,6 @@ nav {
     transform: none;
   }
 
-  /* Show sidebar when active */
   .menubar:not(.sidebargo) {
     transform: translateX(0);
   }
@@ -134,7 +129,6 @@ nav {
   transform: translateX(0);
 }
 
-/* Slide Image */
 #slideImage {
   width: 90%;
   max-height: 60vh;
@@ -144,7 +138,7 @@ nav {
   border-radius: 10px;
 }
 
-/* Content */
+
 .head1, .chat1, .chat2, .features, .about-faculty {
   padding: 2rem;
 }
@@ -154,6 +148,11 @@ nav {
   color: #333;
   text-align: center;
 }
+
+.highlight{
+    color: blue;
+}
+  
 .head1 h3{
 font-size: 1.8rem;
   color: #333;
@@ -169,16 +168,15 @@ font-size: 1.8rem;
   width: 400px;
 }
 .chat1{
-  margin-left: 40%;
+  margin-left: 50%;
 }
 
 .chat1 img, .chat2 img {
   width: 100px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
-/* Features */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -198,7 +196,6 @@ font-size: 1.8rem;
   font-weight: bold;
 }
 
-/* About Faculty */
 .about-faculty {
   margin-top: 3rem;
 }
@@ -240,7 +237,6 @@ font-size: 1.8rem;
   line-height: 1.6;
 }
 
-/* CTA Link */
 .about-faculty a {
   text-decoration: none;
   display: block;
@@ -255,7 +251,6 @@ font-size: 1.8rem;
   transform: scale(1.1);
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.8rem;
@@ -284,7 +279,7 @@ font-size: 1.8rem;
     height: auto;
   }
 }
-/* Desktop Menu */
+
 .desktop-menu {
   display: flex;
   justify-content: center;
@@ -307,7 +302,6 @@ font-size: 1.8rem;
   color: #210288;
 }
 
-/* Hide sidebar and hamburger in desktop */
 @media (min-width: 769px) {
   .hamburger {
     display: none !important;
@@ -317,7 +311,6 @@ font-size: 1.8rem;
   }
 }
 
-/* Show sidebar & hide desktop nav on small screens */
 @media (max-width: 768px) {
   .desktop-menu {
     display: none;
