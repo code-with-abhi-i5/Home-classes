@@ -152,6 +152,12 @@ nav {
 .head1 h2 {
   font-size: 1.8rem;
   color: #333;
+  text-align: center;
+}
+.head1 h3{
+font-size: 1.8rem;
+  color: #333;
+  text-align: center;
 }
 
 .chat1, .chat2 {
