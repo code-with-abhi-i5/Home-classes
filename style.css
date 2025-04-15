@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -29,6 +30,7 @@ h1 {
   font-size: 2.2rem;
 }
 
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -36,8 +38,9 @@ nav {
   padding: 1rem 2rem;
 }
 
+/* Hamburger & Cross Button Styling */
 .hamburger {
-  display: none;
+  display: none; /* Hidden by default */
   position: fixed;
   top: 20px;
   right: 20px;
@@ -51,6 +54,7 @@ nav {
   cursor: pointer;
 }
 
+/* Show Hamburger on Smaller Screens */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -89,6 +93,7 @@ nav {
     transform: none;
   }
 
+  /* Show sidebar when active */
   .menubar:not(.sidebargo) {
     transform: translateX(0);
   }
@@ -129,6 +134,7 @@ nav {
   transform: translateX(0);
 }
 
+/* Slide Image */
 #slideImage {
   width: 90%;
   max-height: 60vh;
@@ -147,16 +153,30 @@ nav {
   font-size: 1.8rem;
   color: #333;
   text-align: center;
+  font-family:'Courier New', Courier, monospace, Courier monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0; 
+  border-right: 3px solid rgb(35, 1, 122);
+  animation: typing 4s steps(40) infinite, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
 }
 
 .highlight{
-    color: blue;
+    font-size: xx-large;
+    color: rgb(68, 0, 255);
 }
   
 .head1 h3{
 font-size: 1.8rem;
   color: #333;
   text-align: center;
+
 }
 
 .chat1, .chat2 {
@@ -177,10 +197,11 @@ font-size: 1.8rem;
   border-radius: 60%;
 }
 
+/* Features */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  gap: 20px;
   margin-top: 3rem;
 }
 
@@ -196,6 +217,7 @@ font-size: 1.8rem;
   font-weight: bold;
 }
 
+/* About Faculty */
 .about-faculty {
   margin-top: 3rem;
 }
@@ -237,6 +259,7 @@ font-size: 1.8rem;
   line-height: 1.6;
 }
 
+/* CTA Link */
 .about-faculty a {
   text-decoration: none;
   display: block;
@@ -251,6 +274,7 @@ font-size: 1.8rem;
   transform: scale(1.1);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.8rem;
@@ -279,7 +303,7 @@ font-size: 1.8rem;
     height: auto;
   }
 }
-
+/* Desktop Menu */
 .desktop-menu {
   display: flex;
   justify-content: center;
@@ -302,6 +326,7 @@ font-size: 1.8rem;
   color: #210288;
 }
 
+/* Hide sidebar and hamburger in desktop */
 @media (min-width: 769px) {
   .hamburger {
     display: none !important;
@@ -311,6 +336,7 @@ font-size: 1.8rem;
   }
 }
 
+/* Show sidebar & hide desktop nav on small screens */
 @media (max-width: 768px) {
   .desktop-menu {
     display: none;
@@ -426,4 +452,12 @@ font-size: 1.8rem;
   #slideImage {
     width: 90%;
   }
+}
+
+.container{
+  text-align: center;
+}
+
+.container h1{
+  color: #210288;
 }
