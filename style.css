@@ -27,10 +27,10 @@ header img {
 
 h1 {
   font-family: 'Tourney', cursive;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
-/* Reset default styles */
+/* Reset default styles.............................*/
 body, ul {
   margin: 0;
   padding: 0;
@@ -52,7 +52,7 @@ body, ul {
 
 /* Menu items */
 .nav-menu li a {
-  text-decoration: none;
+  text-decoration:none;
   color: #000000;
   font-weight: bold;
 }
@@ -60,7 +60,7 @@ body, ul {
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .nav-menu {
-    flex-direction: column;
+    flex-direction:row;
     gap: 10px;
   }
 }
@@ -128,24 +128,53 @@ font-size: 1.8rem;
   border-radius: 60%;
 }
 
-/* Features */
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
-  margin-top: 3rem;
 }
 
-.features img {
-  width: 100%;
-  max-width: 150px;
-  display: block;
-  margin: auto;
-}
-
-.features p {
+.feature {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
   text-align: center;
-  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.feature p {
+  margin-top: 5px;
+  color: #666;
+}
+
+@media (min-width: 600px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .features {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* About Faculty */
