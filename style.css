@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Merriweather', serif;
-  line-height: 1.5;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 
@@ -22,12 +23,13 @@ header {
 }
 
 header img {
-  width: 60px;
+  width: 100px;
 }
 
 h1 {
   font-family: 'Tourney', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 /* Reset default styles.............................*/
@@ -107,7 +109,6 @@ body, ul {
 font-size: 1.8rem;
   color: #333;
   text-align: center;
-
 }
 
 .chat1, .chat2 {
@@ -139,6 +140,7 @@ font-size: 1.8rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  background: linear-gradient(90deg,#9e88ff,#98fead);
 }
 
 .feature {
@@ -181,6 +183,7 @@ font-size: 1.8rem;
 /* About Faculty */
 .about-faculty {
   margin-top: 3rem;
+  background: linear-gradient(90deg,#f7579f,#c17fff);
 }
 
 .about-faculty h2 {
@@ -220,7 +223,6 @@ font-size: 1.8rem;
   line-height: 1.6;
 }
 
-/* CTA Link */
 .about-faculty a {
   text-decoration: none;
   display: block;
