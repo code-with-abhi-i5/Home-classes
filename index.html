@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JSR Home Tution</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <header>
     <!--a bala logo hai-->
-    <img src="images/senmitralogo.jpg" alt="logo" class="logo" />
+    <img src="images/Senmitralogo.jpg" alt="logo" class="logo" />
     <div class="header-center">
     <h1>Senmitra Home Tuition</h1>
     </div>
@@ -41,15 +42,22 @@
         <h3>Get Started With <span class="highlight">Soumitra Sir</span>. The Most Affordable Learning Solution</h3>
       </div>
 
-      <div class="chat1">
-        <p>Soumitra sir What is Home tuition?</p>
-        <img src="./images/student.jpg" alt="a picture of a female" />
-      </div>
-
-      <div class="chat2">
-        <img src="images/rimpa.jpg" alt="picture of sir" />
-        <p>Home tuition is where students learn with love and grow with guidance</p>
-      </div>
+      <section class="about-section">
+    <div class="about-text">
+      <h2>About us</h2>
+      <h3>Welcome to JSR Home Tuition</h3>
+      <p>
+        At JSR Home Tuition, we believe that every student has unique potential—and the right guidance can unlock it. We are a team of passionate and experienced educators committed to providing high-quality, personalized learning support at your doorstep.<br>
+      </p>
+      <h4>Founded by Mr. Soumitra Ghosh</h4>
+      <p>
+        A dedicated educator with over 7 years of experience in primary and upper primary education, JSR Home Tuition stands on the principles of student-centric learning and strong foundational understanding. With certified and qualified teachers across various subjects, we cater to students from primary level up to graduation.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="./images/hometution.jpg" alt="Home Tuition Image">
+    </div>
+  </section>
 
   <div class="features">
 
@@ -100,7 +108,56 @@
           </div>
         </div>
 
-        <a id="view" href="./faculty.html">View More</a>
+        <div class="educator">
+        <img src="./images/basudev.jpg" />
+        <div class="educator-text">
+          <h3>Mr. Basudev Manjhi</h3>
+          <p>
+            An experienced Mathematics educator with over 10 years of teaching
+            expertise, Mr. Basudev Manjhi holds a B.Tech degree. Known for his
+            analytical approach and clarity in concept delivery, he plays a key
+            role in developing strong mathematical foundations in students.
+          </p>
+        </div>
+      </div>
+
+      <div class="educator">
+        <img src="./images/mousoumi.jpg" />
+        <div class="educator-text">
+          <h3>Ms. Mousami Maity</h3>
+          <p>
+            Has been teaching Biology for over 5 years. With an M.Sc. in Biology
+            and a B.Ed. degree, she brings both academic excellence and
+            effective teaching strategies to the classroom, inspiring students
+            to explore the wonders of life sciences.
+          </p>
+        </div>
+      </div>
+
+      <div class="educator">
+        <img src="about-us-home-tuition.png" />
+        <div class="educator-text">
+          <h3>Ms. Lilima Sathpathy</h3>
+          <p>
+            Is a dedicated educator with 5+ years of experience in teaching
+            Hindi and Sanskrit. She specializes in Primary, Upper Primary, and
+            Higher Secondary education. With a B.Sc. degree and D.El.Ed
+            qualification, she blends traditional values with modern teaching
+            methods to make language learning engaging and meaningful.
+          </p>
+        </div>
+      </div>
+
+      <div class="educator">
+        <img src="./images/rimpa.jpg" />
+        <div class="educator-text">
+          <h3>Ms. Rimpa Das holds</h3>
+          <p>
+            A B.Sc. and M.Sc. in Biology along with a B.Ed. qualification. She
+            is committed to nurturing curiosity and scientific thinking among
+            students, especially in the field of life sciences.
+          </p>
+        </div>
       </div>
 
       <div class="container">
@@ -121,9 +178,37 @@
         </ul>
       </div>
     </article>
+
+    <div class="container">
+    <div class="contact-info">
+      <h2>Let's get in touch</h2>
+      <p><strong>We’re open for any suggestion or just to have a chat.</strong></p> <br>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> jamsadpur</p> <br>
+      <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +916299390773</p> <br>
+      <p><i class="fa fa-envelope"></i> <strong>Email:</strong>
+        ghoshabhijit1295@gmail.com</p> <br>
+      <p><i class="fas fa-globe"></i> <strong>Our socail:</strong>
+        <i class="social-icons">
+        <a href=""><i class="fab fa-whatsapp"></i>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a></p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Get in touch</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
   </main>
 
-  <footer>Contact</footer>
   <script src="script.js"></script>
 </body>
 </html>
