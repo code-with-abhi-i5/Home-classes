@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>JSR Home Tution</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -27,7 +27,7 @@
     </ul>
   </nav>
 
-  <main>
+  <main style="min-height: 100vh; width: 100vw; max-width: 100vw; overflow-x: hidden;">
     <!-- isme JS use huaa hai -->
       <section class="slider-container">
         <button id="prevBtn">&#10094;</button>
@@ -160,40 +160,47 @@
         </div>
       </div>
 
-      <div class="container">
-        <img src="./images/hometution.jpg" alt="Home Tuition with homeClass">
-        <h1>HomeClass Teachers — Your Partners in Home Tuition Excellence</h1> <br>
-        <p>
-          At <strong>homeClass</strong>, we bring together the most qualified and professional educators under one platform. Our teachers reflect a strong culture of<br>
-          <strong>discipline, dedication</strong>, and passion—committed to driving your child’s academic growth through <strong>personalized home tuition</strong>.
-        </p> <br>
-        <h2>Why Choose #homeClass #Teachers for Home Tuition?</h2> <br>
-        <ul>
-          <li><strong>Jamshedpur Quality, Local Impact:</strong> Collaboration with top-tier teachers from around the world.</li>
-          <li><strong>Experienced & Qualified Professionals:</strong> Minimum 5 years of teaching experience.</li>
-          <li><strong>Highly Educated Faculty:</strong> 93% of our teachers hold a Master's and a B.Ed degree.</li>
-          <li><strong>Tech-Savvy Educators:</strong> Trained to use CRMs, LMSs, and digital tools effectively.</li>
-          <li><strong>Reliability & Discipline:</strong> Classes are never missed or delayed unnecessarily.</li>
-          <li><strong>Student-Centric Approach:</strong> Every session is focused on your child’s academic goals.</li>
-        </ul>
-      </div>
+      <section class="teachers-hero-section">
+        <div class="teachers-hero-card">
+          <img src="./images/hometution.jpg" alt="Home Tuition with homeClass" class="teachers-hero-img">
+          <div class="teachers-hero-content">
+            <h1 class="teachers-hero-title">HomeClass Teachers <span class="hero-badge"></span></h1>
+            <p class="teachers-hero-desc">
+              <span class="hero-highlight">Your Partners in Home Tuition Excellence</span><br>
+              At <strong class="hero-strong">homeClass</strong>, we bring together the most qualified and professional educators under one platform.<br>
+              Our teachers reflect a strong culture of <strong class="hero-strong">discipline, dedication</strong>, and passion—committed to driving your child’s academic growth through <strong class="hero-strong">personalized home tuition</strong>.
+            </p>
+            <h2 class="teachers-hero-h2">Why Choose <span class="hero-strong">#homeClass #Teachers</span>?</h2>
+            <ul class="teachers-hero-list">
+              <li><strong class="hero-strong">Jamshedpur Quality, Local Impact:</strong> Collaboration with top-tier teachers from around the world.</li>
+              <li><strong class="hero-strong">Experienced & Qualified Professionals:</strong> Minimum 5 years of teaching experience.</li>
+              <li><strong class="hero-strong">Highly Educated Faculty:</strong> 93% of our teachers hold a Master's and a B.Ed degree.</li>
+              <li><strong class="hero-strong">Tech-Savvy Educators:</strong> Trained to use CRMs, LMSs, and digital tools effectively.</li>
+              <li><strong class="hero-strong">Reliability & Discipline:</strong> Classes are never missed or delayed unnecessarily.</li>
+              <li><strong class="hero-strong">Student-Centric Approach:</strong> Every session is focused on your child’s academic goals.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+      
     </article>
 
     <div class="container">
     <div class="contact-info">
       <h2>Let's get in touch</h2>
-      <p><strong>We’re open for any suggestion or just to have a chat.</strong></p> <br>
-      <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> jamsadpur</p> <br>
-      <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +916299390773</p> <br>
-      <p><i class="fa fa-envelope"></i> <strong>Email:</strong>
-        ghoshabhijit1295@gmail.com</p> <br>
-      <p><i class="fas fa-globe"></i> <strong>Our socail:</strong>
-        <i class="social-icons">
-        <a href=""><i class="fab fa-whatsapp"></i>
-        <a href=""><i class="fab fa-facebook"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-youtube"></i></a></p>
+      <p><strong>We’re open for any suggestion or just to have a chat.</strong></p>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> jamsadpur</p>
+      <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 6299390773</p>
+      <p><i class="fa fa-envelope"></i> <strong>Email:</strong> ghoshabhijit1295@gmail.com</p>
+      <p><i class="fas fa-globe"></i> <strong>Our social:</strong></p>
+      <div class="social-icons">
+        <a href="https://wa.me/916299390773" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
     </div>
 
     <div class="contact-form">
@@ -208,6 +215,7 @@
     </div>
   </div>
   </main>
+  
 
   <script src="script.js"></script>
 </body>
