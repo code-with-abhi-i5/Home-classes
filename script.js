@@ -1,4 +1,4 @@
-const images = ["./images/2.jpg", "./images/3.jpg", "./images/1.webp"];
+const images = ["./images/image.jpg", "./images/image.jpg", "./images/image.jpg"];
 let n = 0;
 
 // Initial image
@@ -8,20 +8,6 @@ document.getElementById('slideImage').src = images[n];
 setInterval(() => {
   nextImage();
 }, 5000);
-
-// Show/hide sidebar
-document.getElementById('cross').style.visibility = "hidden";
-document.getElementById('ham').addEventListener('click', () => {
-  document.getElementsByClassName('menubar')[0].classList.remove('sidebargo');
-  document.getElementById('cross').style.visibility = "visible";
-  document.getElementById('ham').style.visibility = "hidden";
-});
-
-document.getElementById('cross').addEventListener('click', () => {
-  document.getElementsByClassName('menubar')[0].classList.add('sidebargo');
-  document.getElementById('ham').style.visibility = "visible";
-  document.getElementById('cross').style.visibility = "hidden";
-});
 
 // Manual Slide Controls
 document.getElementById('prevBtn').addEventListener('click', prevImage);
