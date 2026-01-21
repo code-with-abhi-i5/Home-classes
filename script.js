@@ -1,4 +1,4 @@
-const images = ["./images/image.jpg", "./images/image.jpg", "./images/image.jpg"];
+const images = ["./images/WEB1.jpeg", "./images/image.jpg", "./images/WEB2.jpeg"];
 let n = 0;
 
 // Initial image
